@@ -1,0 +1,197 @@
+/*GENERAL*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+font-family: "Montserrat"
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-size-adjust: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: grey
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+  }
+
+.container h4 {
+    margin-top: 20px;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header{
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* TRANSITION */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAVIGATION */
+
+nav,
+.nav-links{
+    display:flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links {
+    gap: 15rem;
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+.navbar{
+    background-color: grey;
+    height: 50px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+p {
+    color: black;
+    font-size: 0.8rem;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+  }
+
+h3{
+    align-items: center;
+    text-align: center;
+}
+
+  ul {
+    font-size: 2.6rem; 
+    line-height: 1.2;
+    vertical-align: auto;
+    list-style-type: none;
+    padding: 25px;
+  }
+
+  li a {
+    display: flex; /* Align items side by side */
+    align-items: center; /* Vertically center them */
+    text-decoration: none; /* Remove underline */
+}
+
+.number {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 1em; 
+}
+
+/* Flex container for the layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content at the top */
+    padding: 20px;
+    gap: 20px; /* Space between left and right sections */
+}
+
+/* Left side: Text content */
+.left-content {
+    flex: 1; /* Take up available space */
+    text-align: left;
+}
+
+.left-content p:first-child {
+    margin-left: 45px; /* Remove margin for "01" */
+
+}
+
+.left-content h1 {
+    margin-left: 45px; /* Add a small margin between "01" and the title */
+    margin-bottom: 100px;
+}
+
+.left-content p:last-child {
+    margin-top: 10px; /* Add space before project description */
+}
+
+/* Right side: iframe content */
+.right-content {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: flex-end; /* Align iframe to the right */
+}
+
+/* Style for the large image */
+.anthive-project .anthive-image {
+    width: 40%; /* Adjust image size (60% of the container space will be text) */
+    height: auto; /* Maintain aspect ratio */
+    float: right; /* Float the image to the right side */
+    padding: 20px;
+}
+.contact {
+    position: relative; /* Fixed typo */
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contact .content p { /* Removed unnecessary space */
+    font-size: 18px; /* Adjusted to a more appropriate size */
+    font-weight: 400; /* Changed to normal for paragraphs */
+    text-align: center;
+}
+
